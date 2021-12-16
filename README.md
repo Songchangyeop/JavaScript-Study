@@ -192,7 +192,7 @@ VariableEnvironment: {
 
 </br>
 
-<p align="center"><img src="img/eventloop.png"></p>
+<p align="center"><img src="img/eventloop.png"  width="400px"></p>
 
 </br>
 
@@ -328,7 +328,7 @@ ex) 입력 폼 정보, 일회성 로그인, 비회원 장바구니
 
 </br>
 
-<p align="center"><img src="img/session.png"></p>
+<p align="center"><img src="img/session.png" width="400px"></p>
 
 1. 클라이언트가 서버에 요청(Request, n = 1)을 한다.
 2. 서버는 요청을 받고, 사용자를 확인 후 회원 정보에 대한 세션을 저장소에 생성한다.
