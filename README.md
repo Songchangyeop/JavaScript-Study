@@ -365,3 +365,65 @@ ex) 입력 폼 정보, 일회성 로그인, 비회원 장바구니
 </br>
 
 **장점** : 서버에 불 필요하게 데이터 저장 안 하고 용량이 크다.
+
+</br>
+
+---
+
+</br>
+
+## Virtual DomTree
+
+</br>
+
+메모리상에 컴포넌트들이 보관되어있다
+
+어떤 컴포넌트의 변경사항이 생기면 이전의 Virrual DomTree와 비교해서 변경되는 부분만
+
+실제 DomTree에 업데이트 한다.
+
+</br>
+
+---
+
+</br>
+
+## Debounce, Throttle
+
+</br>
+
+### **debounce**
+
+</br>
+
+```
+_.debounce(func, [wait=0], [options={}])
+```
+
+</br>
+
+debounce는 이벤트가 **끝난 뒤**에 설정해둔 **시간(wait)이 지나야 콜백(func)이 실행** 된다. 아래 사진을 보면 여러 이벤트들이 하나로 그룹지어지는데 이게 바로 debounce다.
+
+</br>
+
+<p align="center"><img src="img/debounce.png" width="400px"></p>
+
+</br>
+
+**debounce는 반복적으로 일어나는 이벤트의 마지막 이벤트만 실행한다.**
+
+</br>
+
+## **throttle**
+
+```
+_.throttle(func, [wait=0], [options={}])
+```
+
+</br>
+
+throttle은 **콜백 함수(func)를 일정 주기(wait) 내에 한 번만** 호출한다. 특히 scroll, mousemove 이벤트와 같이 짧은 시간에 굉장히 많이 실행되는 이벤트에 사용한다.
+
+</br>
+
+**debounce는 이벤트가 끝날 때까지 기다렸다가 시작된다는 점, throttle은 이벤트가 시작되면 일정 주기로 계속 실행한다는 점이 다르다.**
