@@ -427,3 +427,27 @@ throttle은 **콜백 함수(func)를 일정 주기(wait) 내에 한 번만** �
 </br>
 
 **debounce는 이벤트가 끝날 때까지 기다렸다가 시작된다는 점, throttle은 이벤트가 시작되면 일정 주기로 계속 실행한다는 점이 다르다.**
+
+</br>
+
+---
+
+</br>
+
+## Redux와 Context API의 차이 ✔️
+
+</br>
+
+위의 설명만 보면은 Redux와 Context API는 사실상 차이가 거의 없어보입니다. 둘 다 전역 상태 관리를 위한 도구라는 공통점을 가지고 있기 때문이죠. 사실 Redux 또한 Context API를 가지고 만든 라이브러리입니다. 전역 상태 관리 측면에서는 차이점이 거의 없다고 봐도 무방하다는 의미입니다. *(Context API는 high-frequency updates에 좋지 않은 성능을 보이지만 Redux는 그렇지 않습니다)*
+
+하지만 Redux는 Context API와 다르게 전역 상태 관리외에 다양한 기능을 제공합니다.
+
+</br>
+
+<p align="center"><img src="img/description.png" width="400px"></p>
+
+</br>
+
+Dan Abrarnov의 Medium 게시글을 발췌한 부분입니다.위 항목들은 모두 Redux가 Context API에 비해 가지는 강점입니다. `redux-saga`, `redux-thunk`, `redux-devtools` 등 다양한 추가 라이브러리를 통해 우리가 조금 더 상태 관리를 수월하게하고 긴밀하고 정확한 코딩을 할 수 있도록 합니다. 여러 라이브러리가 모여 Redux라는 하나의 프레임워크가 되어 개발자에게 큰 도움을 주고 있는 것으로 볼 수 있습니다. 하지만 Context API는 이런 부가적인 기능을 제공하지 않아 다른 라이브러리를 통해 구현해야합니다.
+
+Redux가 많은 기능을 제공하지만 Context API에 비해 작성해야하는 코드도 많고 복잡하기 때문에 이런 부가 기능이 필요하지 않다면 Redux를 사용하지 않아도 됩니다.
